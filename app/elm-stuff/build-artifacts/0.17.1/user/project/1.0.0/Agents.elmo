@@ -372,7 +372,7 @@ var _user$project$Agents$AgentInfo = function (a) {
 									return function (j) {
 										return function (k) {
 											return function (l) {
-												return {id: a, username: b, password: c, firstname: d, lastname: e, displayname: f, title: g, phone: h, email: i, pic: j, bio: k, created: l};
+												return {id: a, username: b, password: c, firstname: d, lastname: e, displayname: f, title: g, phone: h, email: i, bio: j, created: k, pic: l};
 											};
 										};
 									};
@@ -387,15 +387,15 @@ var _user$project$Agents$AgentInfo = function (a) {
 };
 var _user$project$Agents$agentInfoDecoder = A3(
 	_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
-	'created',
+	'pic',
 	_elm_lang$core$Json_Decode$string,
 	A3(
 		_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
-		'bio',
+		'created',
 		_elm_lang$core$Json_Decode$string,
 		A3(
 			_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
-			'pic',
+			'bio',
 			_elm_lang$core$Json_Decode$string,
 			A3(
 				_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,

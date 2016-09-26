@@ -43,9 +43,9 @@ type alias AgentInfo =
     , title : String
     , phone : String
     , email : String
-    , pic : String
     , bio : String
     , created : String
+    , pic : String
     }
 
 
@@ -132,6 +132,13 @@ view model =
         div []
             [ hr [] []
             , ul [] (List.map showAgent model.agents)
+              -- ERROR CHECKING MESSAGE CODE
+              -- , p []
+              --     [ text "the 'in' is working." ]
+              -- , p []
+              --     [ text <| (toString model.message) ]
+              -- , p []
+              --     [ text <| (toString model.agents) ]
             , hr [] []
             ]
 
@@ -233,9 +240,9 @@ agentInfoDecoder =
         |> Json.Decode.Pipeline.required "title" Json.Decode.string
         |> Json.Decode.Pipeline.required "phone" Json.Decode.string
         |> Json.Decode.Pipeline.required "email" Json.Decode.string
-        |> Json.Decode.Pipeline.required "pic" Json.Decode.string
         |> Json.Decode.Pipeline.required "bio" Json.Decode.string
         |> Json.Decode.Pipeline.required "created" Json.Decode.string
+        |> Json.Decode.Pipeline.required "pic" Json.Decode.string
 
 
 agentInfoListDecoder : Decoder (List AgentInfo)
