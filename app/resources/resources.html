@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<!-- category, subcategory, title, agent_id, text -->
+<html>
+    <head><meta charset="UTF-8">
+        <title>The Clarke Agency - Gunnison Real Estate</title>
+        <!-- JQUERY -->
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+        <!-- BEGIN BOOTSTRAP -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- END BOOTSTRAP -->
+        <!-- CUSTOM STYLE -->
+        <link rel="stylesheet" href="../../assets/css/master.css" media="screen" title="no title">
+        <!-- Include resources script -->
+        <script type="text/javascript" src="resources.js"></script>
+    </head>
+    <body ng-app="NewResource">
+        <header>
+            <div class="container-fluid cf-jumbo">
+                <div class="jumbotron">
+                    <img src="../../assets/images/clarkeagencylogolow.png" alt="The Clarke Agency Inc - Logo" width="90%"/>
+                </div>
+            </div>
+            <div class="container-fluid cf-nav">
+                <ul class="nav nav-tabs">
+                    <li role="presentation">
+                        <a href="../../index.html">Home</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="../listings/listings.html">Our Listings</a>
+                    </li>
+                    <!-- <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Properties
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Homes</a>
+                            </li>
+                            <li>
+                                <a href="#">Condos</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#">Vacant Land</a>
+                            </li>
+                            <li>
+                                <a href="#">Multi-Family</a>
+                            </li>
+                            <li>
+                                <a href="#">Commercial</a>
+                            </li>
+                        </ul>
+                    </li> -->
+                    <li role="presentation">
+                        <a href="../search/mls.html">MLS Search</a>
+                    </li>
+                    <li role="presentation" class="active">
+                        <a href="resources.html">Resources</a>
+                    </li>
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            About Us
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../agents/agents.html">Our Agents</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li role="presentation">
+                        <a href="../contact/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- RESOURCES HERE -->
+        <div id="resources"></div>
+        <!-- END RESOURCES -->
+        <footer class="footer">
+            <div class="container">
+                <p class="text-muted">This site is a project site and is only intended to be used for demonstration purposes.</p>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+        <script type="text/javascript" src="form.js"></script>
+        <script type="text/javascript" src="controller.js"></script>
+        <script>
+            'use strict';
+            var node = document.getElementById('resources');
+            var app = Elm.Resources.embed(node);
+        </script>
+    </body>
+</html>

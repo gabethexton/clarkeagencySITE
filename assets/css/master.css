@@ -1,0 +1,84 @@
+.cf-jumbo {
+    background-color: #EEEEEE;
+}
+
+.jumbotron {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cf-nav {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #EEEEEE;
+}
+
+.nav-tabs>li {
+    float: none;
+    display: inline-block;
+}
+
+footer {
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+    background-color: salmon;
+    text-align: center;
+    color: black;
+}
+
+.listings-container {
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.maps-border {
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#maps-window {
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px black;
+}
+
+.about {
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px black;
+}
+
+.agent-card {
+    vertical-align: top;
+    display: inline-block;
+    margin: 20px;
+    width: 30%;
+    height: 500px;
+    overflow: auto;
+    background-color: #ffe;
+}
+
+.panel-heading {
+    text-align: center;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+}
+
+.profile-title {
+    display: inline-block;
+}
+
+.listing-pic {
+    margin: 0 auto;
+    width: 95%;
+    border: 1px double gray;
+    border-radius: 2px;
+}
