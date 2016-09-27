@@ -9239,7 +9239,7 @@ var _user$project$Agents$getAgents = A3(
 	A2(
 		_elm_lang$core$Task$mapError,
 		_elm_lang$core$Basics$toString,
-		A2(_evancz$elm_http$Http$get, _user$project$Agents$agentInfoListDecoder, 'https://clarkeagency.herokuapp.com/agents/4')));
+		A2(_evancz$elm_http$Http$get, _user$project$Agents$agentInfoListDecoder, 'https://clarkeagency.herokuapp.com/agents')));
 var _user$project$Agents$initModel = function () {
 	var model = {
 		helloWorld: 'Hello World!',
