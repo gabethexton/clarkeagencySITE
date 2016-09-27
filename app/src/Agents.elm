@@ -252,7 +252,7 @@ agentInfoListDecoder =
 
 getAgents : Cmd Msg
 getAgents =
-    Http.get agentInfoListDecoder "https://clarkeagency.herokuapp.com/agents"
+    Http.get agentInfoListDecoder "https://clarkeagency.herokuapp.com/agents/4"
         --"http://localhost:3000/agents"
         |>
             Task.mapError toString
