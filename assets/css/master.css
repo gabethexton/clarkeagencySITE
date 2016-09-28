@@ -1,3 +1,7 @@
+.active {
+    background-color: #DADADA !important;
+}
+
 .cf-jumbo {
     background-color: #EEEEEE;
 }
@@ -25,6 +29,10 @@ footer {
     background-color: salmon;
     text-align: center;
     color: black;
+}
+
+#listings {
+    text-align: center;
 }
 
 .listings-container {
@@ -203,10 +211,6 @@ textarea:focus, input:focus {
 
 .main {
     background-color: #DADADA;
-}
-
-body {
-    background: #DADADA;
 }
 
 .form-heading {

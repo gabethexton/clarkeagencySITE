@@ -131,8 +131,7 @@ view model =
                 ]
     in
         div []
-            [ hr [] []
-            , ul [] (List.map showAgent model.agents)
+            [ ul [] (List.map showAgent model.agents)
               -- ERROR CHECKING MESSAGE CODE
               -- , p []
               --     [ text "the 'in' is working." ]
