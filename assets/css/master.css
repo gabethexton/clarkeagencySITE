@@ -91,7 +91,6 @@ footer {
 }
 
 .listing-title {
-    padding-left: 20px;
     display: inline-block;
     text-align: left;
 }
@@ -250,4 +249,18 @@ body {
 .contact {
     text-align: center;
     width: 200px;
+}
+
+.tag {
+    padding-top: 10px;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+body {
+    font-family: 'Julius Sans One', sans-serif;
+    font-style: normal;
+    font-weight: 900;
 }
