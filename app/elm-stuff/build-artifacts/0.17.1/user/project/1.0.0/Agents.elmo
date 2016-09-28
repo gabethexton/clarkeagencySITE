@@ -307,38 +307,6 @@ var _user$project$Agents$view = function (model) {
 											_elm_lang$core$Native_List.fromArray(
 												[
 													_elm_lang$html$Html$text(
-													A2(_elm_lang$core$Basics_ops['++'], 'Username:  ', agent.username))
-												]))
-										])),
-									A2(
-									_elm_lang$html$Html$li,
-									_elm_lang$core$Native_List.fromArray(
-										[]),
-									_elm_lang$core$Native_List.fromArray(
-										[
-											A2(
-											_elm_lang$html$Html$h5,
-											_elm_lang$core$Native_List.fromArray(
-												[]),
-											_elm_lang$core$Native_List.fromArray(
-												[
-													_elm_lang$html$Html$text(
-													A2(_elm_lang$core$Basics_ops['++'], 'Display Name: ', agent.displayname))
-												]))
-										])),
-									A2(
-									_elm_lang$html$Html$li,
-									_elm_lang$core$Native_List.fromArray(
-										[]),
-									_elm_lang$core$Native_List.fromArray(
-										[
-											A2(
-											_elm_lang$html$Html$h5,
-											_elm_lang$core$Native_List.fromArray(
-												[]),
-											_elm_lang$core$Native_List.fromArray(
-												[
-													_elm_lang$html$Html$text(
 													A2(_elm_lang$core$Basics_ops['++'], 'Phone: ', agent.phone))
 												]))
 										])),

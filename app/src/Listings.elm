@@ -103,30 +103,20 @@ view model =
     let
         showListing listing =
             div
-                [ class "panel panel-default agent-card" ]
+                [ class "panel panel-default listing-card" ]
                 [ div
-                    [ class "panel-heading" ]
-                    [ img [ src listing.pic, class "listing-pic" ] []
-                    , h3
-                        [ class "panel-title" ]
-                        [ text <| listing.address ]
-                    , h6 []
-                        [ text <| listing.city ]
+                    [ class "panel-heading listing-header" ]
+                    [ h4 [ class "listing-title" ] [ text listing.address ]
+                    , h4 [ class "listing-price" ] [ text <| ("$ " ++ toString listing.price) ]
+                    , div [ class "listing-pic" ] [ img [ src listing.pic ] [] ]
                     ]
                 , div
-                    [ class "panel-body" ]
-                    [ ul [ attribute "style" "list-style: none;" ]
-                        [ li []
-                            [ text <| (listing.city ++ ", " ++ listing.state ++ " - " ++ listing.zip) ]
-                        , li []
-                            [ text <| "$" ++ (toString listing.price) ]
-                        , hr [] []
-                        , li []
-                            [ text ("Description: " ++ listing.description) ]
-                        , hr [] []
-                        , li []
-                            [ text ("Notes: " ++ listing.notes) ]
-                        ]
+                    [ class "panel-body listing-details" ]
+                    [ h5 [] [ text ("Located at: " ++ listing.address ++ " - " ++ listing.city ++ " - " ++ listing.state ++ " - " ++ listing.zip) ]
+                    , hr [] []
+                    , h5 [] [ text <| listing.description ]
+                    , hr [] []
+                    , h5 [] [ text <| listing.notes ]
                     ]
                 ]
     in

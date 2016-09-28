@@ -299,7 +299,7 @@ var _user$project$Listings$view = function (model) {
 			_elm_lang$html$Html$div,
 			_elm_lang$core$Native_List.fromArray(
 				[
-					_elm_lang$html$Html_Attributes$class('panel panel-default agent-card')
+					_elm_lang$html$Html_Attributes$class('panel panel-default listing-card')
 				]),
 			_elm_lang$core$Native_List.fromArray(
 				[
@@ -307,114 +307,114 @@ var _user$project$Listings$view = function (model) {
 					_elm_lang$html$Html$div,
 					_elm_lang$core$Native_List.fromArray(
 						[
-							_elm_lang$html$Html_Attributes$class('panel-heading')
+							_elm_lang$html$Html_Attributes$class('panel-heading listing-header')
 						]),
 					_elm_lang$core$Native_List.fromArray(
 						[
 							A2(
-							_elm_lang$html$Html$img,
+							_elm_lang$html$Html$h4,
 							_elm_lang$core$Native_List.fromArray(
 								[
-									_elm_lang$html$Html_Attributes$src(listing.pic),
-									_elm_lang$html$Html_Attributes$class('listing-pic')
-								]),
-							_elm_lang$core$Native_List.fromArray(
-								[])),
-							A2(
-							_elm_lang$html$Html$h3,
-							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$html$Html_Attributes$class('panel-title')
+									_elm_lang$html$Html_Attributes$class('listing-title')
 								]),
 							_elm_lang$core$Native_List.fromArray(
 								[
 									_elm_lang$html$Html$text(listing.address)
 								])),
 							A2(
-							_elm_lang$html$Html$h6,
-							_elm_lang$core$Native_List.fromArray(
-								[]),
+							_elm_lang$html$Html$h4,
 							_elm_lang$core$Native_List.fromArray(
 								[
-									_elm_lang$html$Html$text(listing.city)
+									_elm_lang$html$Html_Attributes$class('listing-price')
+								]),
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$html$Html$text(
+									A2(
+										_elm_lang$core$Basics_ops['++'],
+										'$ ',
+										_elm_lang$core$Basics$toString(listing.price)))
+								])),
+							A2(
+							_elm_lang$html$Html$div,
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$html$Html_Attributes$class('listing-pic')
+								]),
+							_elm_lang$core$Native_List.fromArray(
+								[
+									A2(
+									_elm_lang$html$Html$img,
+									_elm_lang$core$Native_List.fromArray(
+										[
+											_elm_lang$html$Html_Attributes$src(listing.pic)
+										]),
+									_elm_lang$core$Native_List.fromArray(
+										[]))
 								]))
 						])),
 					A2(
 					_elm_lang$html$Html$div,
 					_elm_lang$core$Native_List.fromArray(
 						[
-							_elm_lang$html$Html_Attributes$class('panel-body')
+							_elm_lang$html$Html_Attributes$class('panel-body listing-details')
 						]),
 					_elm_lang$core$Native_List.fromArray(
 						[
 							A2(
-							_elm_lang$html$Html$ul,
+							_elm_lang$html$Html$h5,
+							_elm_lang$core$Native_List.fromArray(
+								[]),
 							_elm_lang$core$Native_List.fromArray(
 								[
-									A2(_elm_lang$html$Html_Attributes$attribute, 'style', 'list-style: none;')
-								]),
-							_elm_lang$core$Native_List.fromArray(
-								[
+									_elm_lang$html$Html$text(
 									A2(
-									_elm_lang$html$Html$li,
-									_elm_lang$core$Native_List.fromArray(
-										[]),
-									_elm_lang$core$Native_List.fromArray(
-										[
-											_elm_lang$html$Html$text(
+										_elm_lang$core$Basics_ops['++'],
+										'Located at: ',
+										A2(
+											_elm_lang$core$Basics_ops['++'],
+											listing.address,
 											A2(
 												_elm_lang$core$Basics_ops['++'],
-												listing.city,
+												' - ',
 												A2(
 													_elm_lang$core$Basics_ops['++'],
-													', ',
+													listing.city,
 													A2(
 														_elm_lang$core$Basics_ops['++'],
-														listing.state,
-														A2(_elm_lang$core$Basics_ops['++'], ' - ', listing.zip)))))
-										])),
-									A2(
-									_elm_lang$html$Html$li,
-									_elm_lang$core$Native_List.fromArray(
-										[]),
-									_elm_lang$core$Native_List.fromArray(
-										[
-											_elm_lang$html$Html$text(
-											A2(
-												_elm_lang$core$Basics_ops['++'],
-												'$',
-												_elm_lang$core$Basics$toString(listing.price)))
-										])),
-									A2(
-									_elm_lang$html$Html$hr,
-									_elm_lang$core$Native_List.fromArray(
-										[]),
-									_elm_lang$core$Native_List.fromArray(
-										[])),
-									A2(
-									_elm_lang$html$Html$li,
-									_elm_lang$core$Native_List.fromArray(
-										[]),
-									_elm_lang$core$Native_List.fromArray(
-										[
-											_elm_lang$html$Html$text(
-											A2(_elm_lang$core$Basics_ops['++'], 'Description: ', listing.description))
-										])),
-									A2(
-									_elm_lang$html$Html$hr,
-									_elm_lang$core$Native_List.fromArray(
-										[]),
-									_elm_lang$core$Native_List.fromArray(
-										[])),
-									A2(
-									_elm_lang$html$Html$li,
-									_elm_lang$core$Native_List.fromArray(
-										[]),
-									_elm_lang$core$Native_List.fromArray(
-										[
-											_elm_lang$html$Html$text(
-											A2(_elm_lang$core$Basics_ops['++'], 'Notes: ', listing.notes))
-										]))
+														' - ',
+														A2(
+															_elm_lang$core$Basics_ops['++'],
+															listing.state,
+															A2(_elm_lang$core$Basics_ops['++'], ' - ', listing.zip))))))))
+								])),
+							A2(
+							_elm_lang$html$Html$hr,
+							_elm_lang$core$Native_List.fromArray(
+								[]),
+							_elm_lang$core$Native_List.fromArray(
+								[])),
+							A2(
+							_elm_lang$html$Html$h5,
+							_elm_lang$core$Native_List.fromArray(
+								[]),
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$html$Html$text(listing.description)
+								])),
+							A2(
+							_elm_lang$html$Html$hr,
+							_elm_lang$core$Native_List.fromArray(
+								[]),
+							_elm_lang$core$Native_List.fromArray(
+								[])),
+							A2(
+							_elm_lang$html$Html$h5,
+							_elm_lang$core$Native_List.fromArray(
+								[]),
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$html$Html$text(listing.notes)
 								]))
 						]))
 				]));

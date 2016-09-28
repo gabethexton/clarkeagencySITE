@@ -9011,26 +9011,10 @@ var _user$project$Agents$view = function (model) {
 					_elm_lang$html$Html$div,
 					_elm_lang$core$Native_List.fromArray(
 						[
-							_elm_lang$html$Html_Attributes$class('panel-heading')
+							_elm_lang$html$Html_Attributes$class('panel-heading agent-heading')
 						]),
 					_elm_lang$core$Native_List.fromArray(
 						[
-							A2(
-							_elm_lang$html$Html$div,
-							_elm_lang$core$Native_List.fromArray(
-								[]),
-							_elm_lang$core$Native_List.fromArray(
-								[
-									A2(
-									_elm_lang$html$Html$img,
-									_elm_lang$core$Native_List.fromArray(
-										[
-											_elm_lang$html$Html_Attributes$class('profile-pic'),
-											_elm_lang$html$Html_Attributes$src(agent.pic)
-										]),
-									_elm_lang$core$Native_List.fromArray(
-										[]))
-								])),
 							A2(
 							_elm_lang$html$Html$div,
 							_elm_lang$core$Native_List.fromArray(
@@ -9067,14 +9051,32 @@ var _user$project$Agents$view = function (model) {
 					_elm_lang$html$Html$div,
 					_elm_lang$core$Native_List.fromArray(
 						[
-							_elm_lang$html$Html_Attributes$class('panel-body')
+							_elm_lang$html$Html_Attributes$class('panel-body profile-details')
 						]),
 					_elm_lang$core$Native_List.fromArray(
 						[
 							A2(
+							_elm_lang$html$Html$div,
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$html$Html_Attributes$class('profile-pic')
+								]),
+							_elm_lang$core$Native_List.fromArray(
+								[
+									A2(
+									_elm_lang$html$Html$img,
+									_elm_lang$core$Native_List.fromArray(
+										[
+											_elm_lang$html$Html_Attributes$src(agent.pic)
+										]),
+									_elm_lang$core$Native_List.fromArray(
+										[]))
+								])),
+							A2(
 							_elm_lang$html$Html$ul,
 							_elm_lang$core$Native_List.fromArray(
 								[
+									_elm_lang$html$Html_Attributes$class('details-list'),
 									A2(_elm_lang$html$Html_Attributes$attribute, 'style', 'list-style: none;')
 								]),
 							_elm_lang$core$Native_List.fromArray(
@@ -9085,8 +9087,15 @@ var _user$project$Agents$view = function (model) {
 										[]),
 									_elm_lang$core$Native_List.fromArray(
 										[
-											_elm_lang$html$Html$text(
-											A2(_elm_lang$core$Basics_ops['++'], 'Goes by: ', agent.displayname))
+											A2(
+											_elm_lang$html$Html$h5,
+											_elm_lang$core$Native_List.fromArray(
+												[]),
+											_elm_lang$core$Native_List.fromArray(
+												[
+													_elm_lang$html$Html$text(
+													A2(_elm_lang$core$Basics_ops['++'], 'Phone: ', agent.phone))
+												]))
 										])),
 									A2(
 									_elm_lang$html$Html$li,
@@ -9094,20 +9103,33 @@ var _user$project$Agents$view = function (model) {
 										[]),
 									_elm_lang$core$Native_List.fromArray(
 										[
-											_elm_lang$html$Html$text(
-											A2(_elm_lang$core$Basics_ops['++'], 'Phone: ', agent.phone))
-										])),
+											A2(
+											_elm_lang$html$Html$h5,
+											_elm_lang$core$Native_List.fromArray(
+												[]),
+											_elm_lang$core$Native_List.fromArray(
+												[
+													_elm_lang$html$Html$text(
+													A2(_elm_lang$core$Basics_ops['++'], 'Email: ', agent.email))
+												]))
+										]))
+								])),
+							A2(
+							_elm_lang$html$Html$hr,
+							_elm_lang$core$Native_List.fromArray(
+								[]),
+							_elm_lang$core$Native_List.fromArray(
+								[])),
+							A2(
+							_elm_lang$html$Html$div,
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$html$Html_Attributes$class('agent-bio')
+								]),
+							_elm_lang$core$Native_List.fromArray(
+								[
 									A2(
-									_elm_lang$html$Html$li,
-									_elm_lang$core$Native_List.fromArray(
-										[]),
-									_elm_lang$core$Native_List.fromArray(
-										[
-											_elm_lang$html$Html$text(
-											A2(_elm_lang$core$Basics_ops['++'], 'Email: ', agent.email))
-										])),
-									A2(
-									_elm_lang$html$Html$li,
+									_elm_lang$html$Html$h6,
 									_elm_lang$core$Native_List.fromArray(
 										[]),
 									_elm_lang$core$Native_List.fromArray(
