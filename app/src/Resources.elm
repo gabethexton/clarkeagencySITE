@@ -91,9 +91,9 @@ view model =
     let
         showResource resource =
             div
-                [ class "panel panel-default" ]
+                [ class "panel panel-default resource" ]
                 [ div
-                    [ class "panel-heading" ]
+                    [ class "panel-heading resource-header" ]
                     [ h3
                         [ class "panel-title" ]
                         [ text <| resource.title ]

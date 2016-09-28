@@ -8847,7 +8847,7 @@ var _user$project$Resources$view = function (model) {
 			_elm_lang$html$Html$div,
 			_elm_lang$core$Native_List.fromArray(
 				[
-					_elm_lang$html$Html_Attributes$class('panel panel-default')
+					_elm_lang$html$Html_Attributes$class('panel panel-default resource')
 				]),
 			_elm_lang$core$Native_List.fromArray(
 				[
@@ -8855,7 +8855,7 @@ var _user$project$Resources$view = function (model) {
 					_elm_lang$html$Html$div,
 					_elm_lang$core$Native_List.fromArray(
 						[
-							_elm_lang$html$Html_Attributes$class('panel-heading')
+							_elm_lang$html$Html_Attributes$class('panel-heading resource-header')
 						]),
 					_elm_lang$core$Native_List.fromArray(
 						[
